@@ -1,5 +1,6 @@
 import api from "@/lib/api";
 import Loading from "./loading";
+import Link from "next/link";
 import { useEffect, useState } from "react";
 
 type posts = {
@@ -28,15 +29,15 @@ export default function Trending(){
 
     return (
         <div className="w-2/4 flex flex-col items-center justify-center">
-            <h1 className="text-2xl font-bold pb-2">Trending Posts</h1>
+            <h1 className="text-3xl font-bold pb-2">Latest Posts</h1>
             <div className="flex flex-col justify-center items-center gap-3 w-full">
                 {isLoading && 
                     <Loading />
                 }
 
                 {!isLoading && posts?.map((post, id) => (
-                    <div key={id} className="border w-fit rounded-md border-gray-300 p-2">
-                        <h1 className="text-lg font-semibold">- {post.title}</h1>
+                    <div key={id} className="flex flex-col gap-3 border rounded-md w-[25rem] border-gray-500 p-3">
+                        <Link className="text-xl font-semibold hover:border-b border-gray-900 w-fit" href="/">- {post.title}</Link>
                         <p className="text-gray-800">{post.description}</p>
                     </div>
                 ))}
