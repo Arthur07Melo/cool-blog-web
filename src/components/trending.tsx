@@ -1,5 +1,5 @@
 import api from "@/lib/api";
-import Loading from "@/pages/loading";
+import Loading from "./loading";
 import { useEffect, useState } from "react";
 
 type posts = {
