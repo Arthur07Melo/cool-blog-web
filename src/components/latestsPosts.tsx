@@ -29,7 +29,7 @@ export default function Trending(){
 
     return (
         <div className="w-2/4 flex flex-col items-center justify-center">
-            <h1 className="text-3xl font-bold pb-2">Latest Posts</h1>
+            <h1 className="text-3xl font-bold pb-2">Latest Reviews</h1>
             <div className="flex flex-col justify-center items-center gap-3 w-full">
                 {isLoading && 
                     <Loading />
