@@ -10,7 +10,7 @@ const karma = Karma({
 export default function FirstSegment() {
     return (
         <div className={`${karma.className} w-full py-44 flex items-center flex-wrap bg-first-segment bg-no-repeat bg-cover p-4`}>
-            <div className="flex flex-col flex-wrap font-medium text-white w-1/2 ml-10 md:ml-44 md:gap-3">
+            <div className="flex flex-col flex-wrap font-medium text-white md:w-1/2 md:ml-44 md:gap-3">
                 <h1 className='text-lg md:text-3xl'>
                     TENHA ACESSO AS MAIS DIVERSAS REVIEWS PESSOAIS DE QUALQUER OBRA E COMPARTILHE SUAS
                     OPINIÕES SOBRE AS MESMAS
