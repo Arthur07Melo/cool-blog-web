@@ -7,12 +7,10 @@ type layoutProps = {
 
 export default function Layout ({ children }: layoutProps){
     return (
-        <div className="w-screen h-screen flex flex-col">
+        <div className="w-screen h-screen flex flex-col justify-between">
             <Navbar />
-            <div>
-                <main className={`w-full h-full bg-gradient-to-tr from-slate-200 via-slate-300 to-slate-400`}>{ children }</main>
-                <Footer />
-            </div>
+            <main className={`w-full h-full bg-gradient-to-tr from-slate-300 via-gray-500 to-blue-950`}>{ children }</main>
+            <Footer /> 
         </div>
     )
 }

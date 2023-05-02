@@ -1,6 +1,7 @@
 import mainLogo from '../../public/mainLogo.png';
 import Image from "next/image"
 import Link from "next/link"
+import LoginDialog from './loginDialog';
 
 
 export default function Navbar() {
@@ -10,7 +11,7 @@ export default function Navbar() {
                 <Link className="text-xl" href="/"><Image src={mainLogo} height={52} alt='logo' /></Link>
             </div>
             <div className="flex gap-3">
-                <Link href="/login">login</Link>
+                <LoginDialog />
                 <Link href="/signup">cadastrar</Link>
                 <Link href="/categories">categorias</Link>
                 <Link href="/contact">contato</Link>
