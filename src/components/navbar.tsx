@@ -12,7 +12,7 @@ export default function Navbar() {
             <div className="flex flex-wrap gap-3">
                 <LoginDialog />
                 <SignupDialog />
-                <Link href="/categories">categorias</Link>
+                <Link href="" onClick={() => {window.alert("In development")}}>categorias</Link>
                 <Link href="/about">sobre</Link>
             </div>
         </div>
